@@ -25,6 +25,7 @@ import { ToastProvider } from './Toast/ToastContext';
 import OrderTable from "./components/Order/OrderTable";
 import HomeAdmin from "./components/Admin/HomeAdmin/HomeAdmin";
 import AdminLayout from "./AdminLayout";
+import Payment from "./components/Payment/Payment";
 
 const Layout = () => {
     console.log('Rendering Layout');
@@ -53,6 +54,8 @@ const router = createBrowserRouter([
             { path: 'changewithcode', element: <ChangePassWithCode /> },
             { path: 'profile', element: <Profile /> },
             { path: 'order', element: <OrderTable /> },
+            { path: 'payment', element: <Payment /> },
+
         ],
     },
     {
